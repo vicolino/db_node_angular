@@ -1,0 +1,29 @@
+<form class="login center">
+
+        <div class="logo">
+            <img ng-src="images/restaurante.png" alt="Restaurante" width="90" height="90">
+        </div>
+
+        <div id="erro" class="erro" data-ng-show="errorMessage">
+            {{errorMessage}}
+        </div>
+
+        <div class="hr">
+            <hr>
+        </div>
+
+		<div class="quadroTexto">
+            <div class="resumo">
+                <b>{{user.name}}</b>, click in restaurant below to vote:
+            </div>
+
+            <div data-ng-repeat="item in restaurantes" class="botaoVotacao" data-ng-click="vote(item)">
+                {{item.name}}
+            </div>
+		</div>
+
+		<div class="linkLogin">
+            <a data-ng-click="logout()" style="cursor: pointer">Exit</a>
+		</div>
+
+</form>

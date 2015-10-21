@@ -1,0 +1,30 @@
+<div class="login centro">
+
+  <div class="logo">
+      <img ng-src="images/restaurante.png" alt="Restaurante" width="90" height="90">
+  </div>
+        <div id="erro" class="erro" data-ng-show="errorMessage">
+            {{errorMessage}}
+        </div>
+
+        <div class="hr">
+            <hr>
+        </div>
+
+		<div class="quadroTexto">
+            <div class="resumo">
+                <b>{{user.name}}</b>, This is the restaurant with more votes until now.
+            </div>
+
+            <div>
+                <h2>Name: {{restaurant.name}}</h2>
+                <h2>Address: {{restaurant.address}}</h2>
+                <h2>Votes: {{restaurant.votes}}</h2>
+            </div>
+		</div>
+
+		<div class="linkLogin">
+            <a data-ng-click="logout()" style="cursor: pointer">Exit</a>
+		</div>
+
+</div>

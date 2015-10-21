@@ -1,0 +1,23 @@
+	<form class="login center" name="userForm" ng-submit="login(user)">
+
+	        <div class="logo">
+	            <img ng-src="images/restaurante.png" alt="Restaurante" width="90" height="90">
+	        </div>
+
+	        <div id="erro" class="erro" data-ng-show="errorMessage">
+	            {{errorMessage}}
+	        </div>
+
+	        <div class="hr">
+	            <hr>
+	        </div>
+
+	        <div class="inputs">
+	          	<input placeholder="User" type="text" name="name" class="input" ng-model="user.user" required>
+							<input ng-model="user.pass" class="input" type="password" placeholder="Pass" required>
+	            <input type="submit" value="Sign In" tabindex="3" class="submit">
+	        </div>
+
+	        <div class="linkLogin"></div>
+
+	</form>
