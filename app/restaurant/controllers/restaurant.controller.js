@@ -37,13 +37,6 @@ exports.update = function (req, res) {
       rest.votes++;
     }
   });
-
-  // for (let i =0; i < restaurants.length; i++) {
-  //   if (restaurants[i].name == restaurant.name) {
-  //     restaurants[i].votes++;
-  //     break;
-  //   }
-  // }
   res.sendStatus(HTTPStatus.OK);
 };
 
